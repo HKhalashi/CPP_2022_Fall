@@ -60,10 +60,9 @@ string longestCommonPrefix(vector<string> strs) {
     bool red_flag = false;
     unsigned j=0;
     while(!red_flag){
-        //cout << "second flag" << endl;
         for(unsigned i =1; i < len ; i++){
             if(strs[0][j] != strs[i][j]){
-                //cout<<"first flag" << endl;
+
                 red_flag = true;}
 
         }
