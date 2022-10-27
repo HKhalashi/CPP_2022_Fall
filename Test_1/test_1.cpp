@@ -51,9 +51,9 @@ int main(int argc, char* argv[])
                 std::cout << "input index: ";
                 std::cin >> index;
                 if(index >= 0 && index < count){
-                    int* t = (int*)malloc(sizeof(a) - sizeof(*(a+index)));
+                    int* t = (int*)malloc(sizeof(a) - sizeof(*(a + index)));
                     int j = 0;
-                    for (int i=0 ; i < count; i++)
+                    for (int i=0; i < count; i++)
                     {
                         if(i != index){
                             *(t+j) = *(a+i);
@@ -77,11 +77,11 @@ int main(int argc, char* argv[])
                 std::cin >> index_1;
                 std::cout << "\nenter index_2:";
                 std::cin >> index_2;
-                if(index_1 >= 0 && index_1 < count && index_2 >= 0 && index_2 < count ){
-                    int el_1 = *(a+index_1);
-                    int el_2 = *(a+index_2);
-                    *(a+index_1) = el_2;
-                    *(a+index_2) = el_1;
+                if(index_1 >= 0 && index_1 < count && index_2 >= 0 && index_2 < count){
+                    int el_1 = *(a + index_1);
+                    int el_2 = *(a + index_2);
+                    *(a + index_1) = el_2;
+                    *(a + index_2) = el_1;
                 }
                 else{
                     std::cout << "invalid index , try again" << std::endl;
