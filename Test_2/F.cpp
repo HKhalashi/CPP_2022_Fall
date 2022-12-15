@@ -13,6 +13,6 @@ long long  f(long long a, long long b, long long c)
 int main() {
     long long a , b , c;
     std::cin>> a>> b >>c;
-    f(a , b , c);
+    std::cout << f(a , b , c);
     return 0;
 }
